@@ -1,4 +1,4 @@
-/*!
+!
  * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -494,19 +494,4 @@ width: 100%;
 height: 100%;
 }
 
-.box {
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 50%;
-    vertical-align: middle;
-    padding: 10px 5px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: white;
-
-
-   /* background: rgba(0,255,0,0.95);*/
-}
-/* End Responsive iFrame for Calendar ////////////////*/
+/* End Responsive iFrame for Calendar ////////////////
