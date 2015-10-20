@@ -508,3 +508,11 @@ height: 100%;
 }
 /* End Responsive iFrame for Calendar ////////////////*/
 
+#contact {
+    background-color: #333333;
+    color: white;
+}
+
+#calendar {
+    background-color: #ededed;
+}
