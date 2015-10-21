@@ -197,7 +197,7 @@ header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 750;
 }
 
 header .header-content .header-content-inner hr {
@@ -207,8 +207,12 @@ header .header-content .header-content-inner hr {
 header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
-    font-weight: 300;
-    color: rgba(255,255,255,.7);
+    font-weight: 500;
+    /*color: rgba(255,255,255,.7);*/
+    /*color: white;*/
+    /*text-shadow: 1px 1px 1px #000000;*/
+/*    background-color: rgba(112,112,112,.65);
+        padding: 20px 30px 30px 30px;*/
 }
 
 @media(min-width:768px) {
