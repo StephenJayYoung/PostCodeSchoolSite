@@ -550,8 +550,8 @@ p.button {
 footer {
     padding: 25px 0;
     text-align: center;
-    background-color: #333333;
-    color: white;
+/*    background-color: #333333;
+    color: white;*/
 }
 
 ul.social-buttons {
@@ -576,7 +576,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #ADD8E6;
+    background-color: #f05f40;
 }
 
 
