@@ -210,14 +210,12 @@ header .header-content .header-content-inner p {
 <<<<<<< HEAD
     font-weight: 500;
     /*color: rgba(255,255,255,.7);*/
-    /*color: white;*/
+   /* color: white;*/
     /*text-shadow: 1px 1px 1px #000000;*/
 /*    background-color: rgba(112,112,112,.65);
         padding: 20px 30px 30px 30px;*/
-=======
     font-weight: 700;
     color: rgba(255,255,255,.7);
->>>>>>> 21c63996ba9a292fba878cfa0e910c664f73b019
 }
 
 @media(min-width:768px) {
@@ -255,6 +253,9 @@ header .header-content .header-content-inner p {
 .service-box {
     margin: 50px auto 0;
     max-width: 400px;
+  /*  position: absolute;*/
+/*    right:    0;
+    bottom:   0;*/
 }
 
 @media(min-width:992px) {
@@ -525,4 +526,33 @@ height: 100%;
 #calendar {
     background-color: #ededed;
 }
+
+p.button {
+  text-align: center;
+}
+
+/*@media only screen and (min-width : 768px) {
+  */
+/*  .row {
+    display: table;*/
+/*  }
+  [class*="col-"] {*/
+/*    float: none;
+    width: 25%;
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+    padding-bottom: 50px;*/
+  }
+/*  p.button {*/
+/*    position: absolute;
+    bottom: 0;*/
+/*    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;*/
+  }
+}
+
+
 
