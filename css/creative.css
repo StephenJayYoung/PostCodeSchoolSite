@@ -579,3 +579,15 @@ ul.social-buttons li a:active {
     background-color: #ADD8E6;
 }
 
+
+#contactForm .form-group {
+    padding: 10px;
+}
+
+#contactForm textarea.form-control {
+    height: 236px;
+}
+
+#contactForm input.form-control {
+    height: auto;
+}
