@@ -530,11 +530,6 @@ p.button {
   text-align: center;
 }
 
-footer {
-    text-align: center;
-    margin-top: 3rem;
-}
-
 /*@media only screen and (min-width : 768px) {
   */
 /*  .row {
@@ -547,7 +542,6 @@ footer {
     vertical-align: top;
     position: relative;
     padding-bottom: 50px;*/
-  }
 /*  p.button {*/
 /*    position: absolute;
     bottom: 0;*/
@@ -555,8 +549,5 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 70%;*/
-  }
-}
-
 
 
