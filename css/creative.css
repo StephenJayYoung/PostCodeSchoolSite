@@ -531,28 +531,5 @@ p.button {
   text-align: center;
 }
 
-/*@media only screen and (min-width : 768px) {
-  */
-/*  .row {
-    display: table;*/
-/*  }
-  [class*="col-"] {*/
-/*    float: none;
-    width: 25%;
-    display: table-cell;
-    vertical-align: top;
-    position: relative;
-    padding-bottom: 50px;*/
-  }
-/*  p.button {*/
-/*    position: absolute;
-    bottom: 0;*/
-/*    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;*/
-  }
-}
-
 
 
