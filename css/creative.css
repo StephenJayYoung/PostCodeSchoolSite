@@ -581,7 +581,14 @@ ul.social-buttons li a:active {
 
 
 #contactForm .form-group {
-    padding: 10px;
+    margin-bottom: 25px;
+}
+#contactForm .form-group input{
+    padding: 20px;
+}
+
+#contactForm .form-group textArea{
+    padding: 20px;
 }
 
 #contactForm textarea.form-control {
