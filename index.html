@@ -167,54 +167,15 @@
                         <h4>Chris Peddecord</h4>
                             <a href="javascript:openprompt()">Bio</a>
                              <div id="results"></div>
-                            <script>
-    function openprompt(){
-
-                var temp = {
-                    state0: {
-                        title: 'Success Story',
-                        html:"Portland Code School gave me the foundation upon which to build from that has taken me in a year's time all over the stack in a multitude of languages. While I started out with Javascript, the concepts and encouragement for modern best-practices has put me in a position to where I can pick up any part of the stack in just about any language and learn quickly and efficiently. I work daily with PCS alumni and have never felt that we were underprepared in our given roles",
-                        buttons: { Close: false},
-                        focus: 1,
-                        submit:function(e,v,m,f){ 
-                            if(!v)
-                                $.prompt.close()
-                            else $.prompt.goToState('state1');//go forward
-                            return false; 
-                        }
-                    },
-                }
-                $.prompt(temp,{
-                    close: function(e,v,m,f){
-                        if(v !== undefined){
-                            var str = "You can now process with this given information:<br />";
-                            $.each(f,function(i,obj){
-                                str += i + " - <em>" + obj + "</em><br />";
-                            }); 
-                            $('#results').html(str);
-                        }
-                    },
-                    classes: {
-                        box: '',
-                        fade: '',
-                        prompt: '',
-                        close: '',
-                        title: 'lead',
-                        message: '',
-                        buttons: '',
-                        button: 'btn',
-                        defaultButton: 'btn-primary'
-                    }
-                });
-            }
-                            </script>
+                             <!-- Results coming from jquery file: jqueryStudentProfiles.js -->
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member text-center">
                         <img src="img/MikeBurnett.jpg" class="img-responsive img-thumbnail" alt="">
                         <h4>Mike Burnett</h4>
-                      <!--   <p class="text-muted">Job Title @ (link to company)</p> -->
+                            <a href="javascript:openprompt1()">Bio</a>
+                             <div id="results1"></div>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -228,8 +189,6 @@
                     <div class="team-member text-center">
                         <img src="img/AngelaRiggs.jpg" class="img-thumbnail" alt="">
                         <h4>Angela Riggs</h4>
-                         <a href="#myPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window">Position popup to window</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -644,6 +603,7 @@
 
         <!-- Jquery Impromptu JS -->
         <script src="js/jquery-impromptu.js"></script>
+        <script src="js/jqueryStudentProfiles.js"></script>
 </body>
 
 
