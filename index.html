@@ -165,19 +165,16 @@
                     <div class="team-member">
                         <img src="img/ChrisPed.jpg" class="img-thumbnail" alt="">
                         <h4>Chris Peddecord</h4>
-                            <a href="javascript:openprompt()">Test Impromptu States Survey</a>
+                            <a href="javascript:openprompt()">Bio</a>
                              <div id="results"></div>
                             <script>
     function openprompt(){
-            
+
                 var temp = {
                     state0: {
-                        title: 'Content Rating',
-                        html:'<label class="radio" for="rate_content_poor"><input type="radio" name="rate_content" id="rate_content_poor" value="Poor" class="radioinput" />Poor</label>'+
-                                '<label class="radio" for="rate_content_ok"><input type="radio" name="rate_content" id="rate_content_ok" value="Ok" class="radioinput" />Ok</label>'+
-                                '<label class="radio" for="rate_content_good"><input type="radio" name="rate_content" id="rate_content_good" value="Good" class="radioinput" />Good</label>'+
-                                '<label class="radio" for="rate_content_excellent"><input type="radio" name="rate_content" id="rate_content_excellent" value="Excellent" class="radioinput" />Excellent!</label>',
-                        buttons: { Cancel: false, Next: true },
+                        title: 'Success Story',
+                        html:"Portland Code School gave me the foundation upon which to build from that has taken me in a year's time all over the stack in a multitude of languages. While I started out with Javascript, the concepts and encouragement for modern best-practices has put me in a position to where I can pick up any part of the stack in just about any language and learn quickly and efficiently. I work daily with PCS alumni and have never felt that we were underprepared in our given roles",
+                        buttons: { Close: false},
                         focus: 1,
                         submit:function(e,v,m,f){ 
                             if(!v)
