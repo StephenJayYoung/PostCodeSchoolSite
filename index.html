@@ -26,6 +26,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
 
+    <!-- Jquery Impromptu CSS -->
+    <link rel="stylesheet" href="css/jquery-impromptu.css" type="text/css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -148,7 +151,7 @@
 </section>
 
         <!-- Success Stories Section -->
-  <!--   <section id="success" class="bg-light-gray">
+    <section id="success" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -156,32 +159,80 @@
                     <h3 class="section-subheading text-muted">An ode to the school that has given us so much.</h3>
                 </div>
             </div>
+            <br>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3 text-center">
                     <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Name</h4>
-                        <p class="text-muted">Job Title @ (link to company)</p>
+                        <img src="img/ChrisPed.jpg" class="img-thumbnail" alt="">
+                        <h4>Chris Peddecord</h4>
+                            <a href="javascript:openprompt()">Test Impromptu States Survey</a>
+                             <div id="results"></div>
+                            <script>
+    function openprompt(){
+            
+                var temp = {
+                    state0: {
+                        title: 'Content Rating',
+                        html:'<label class="radio" for="rate_content_poor"><input type="radio" name="rate_content" id="rate_content_poor" value="Poor" class="radioinput" />Poor</label>'+
+                                '<label class="radio" for="rate_content_ok"><input type="radio" name="rate_content" id="rate_content_ok" value="Ok" class="radioinput" />Ok</label>'+
+                                '<label class="radio" for="rate_content_good"><input type="radio" name="rate_content" id="rate_content_good" value="Good" class="radioinput" />Good</label>'+
+                                '<label class="radio" for="rate_content_excellent"><input type="radio" name="rate_content" id="rate_content_excellent" value="Excellent" class="radioinput" />Excellent!</label>',
+                        buttons: { Cancel: false, Next: true },
+                        focus: 1,
+                        submit:function(e,v,m,f){ 
+                            if(!v)
+                                $.prompt.close()
+                            else $.prompt.goToState('state1');//go forward
+                            return false; 
+                        }
+                    },
+                }
+                $.prompt(temp,{
+                    close: function(e,v,m,f){
+                        if(v !== undefined){
+                            var str = "You can now process with this given information:<br />";
+                            $.each(f,function(i,obj){
+                                str += i + " - <em>" + obj + "</em><br />";
+                            }); 
+                            $('#results').html(str);
+                        }
+                    },
+                    classes: {
+                        box: '',
+                        fade: '',
+                        prompt: '',
+                        close: '',
+                        title: 'lead',
+                        message: '',
+                        buttons: '',
+                        button: 'btn',
+                        defaultButton: 'btn-primary'
+                    }
+                });
+            }
+                            </script>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Name</h4>
-                        <p class="text-muted">Job Title @ (link to company)</p>
+                <div class="col-sm-3">
+                    <div class="team-member text-center">
+                        <img src="img/MikeBurnett.jpg" class="img-responsive img-thumbnail" alt="">
+                        <h4>Mike Burnett</h4>
+                      <!--   <p class="text-muted">Job Title @ (link to company)</p> -->
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Job Title @ (link to company)</p>
+                <div class="col-sm-3">
+                    <div class="team-member text-center">
+                        <img src="img/StacyFabian.jpg" class="img-thumbnail" alt="">
+                        <h4>Stacy Fabian</h4>
+<!--                         <p class="text-muted">Job Title @ (link to company)</p> -->
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                <div class="col-sm-3">
+                    <div class="team-member text-center">
+                        <img src="img/AngelaRiggs.jpg" class="img-thumbnail" alt="">
+                        <h4>Angela Riggs</h4>
+                         <a href="#myPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window">Position popup to window</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -285,7 +336,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
                 <!-- Celandar Section -->
     <section id="calendar">
@@ -301,6 +352,22 @@
         </div>
     </section>
 
+<!--Code for Google Calendar API (if we want to use this) -->
+<!--     <section>
+  <div id ="container">
+    <div id="authorize-div" style="display: none">
+      <span>Authorize access to Google Calendar API</span>
+      Button for the user to click to initiate auth sequence
+      <button id="authorize-button" onclick="handleAuthClick(event)">
+        Authorize
+      </button>
+    </div>
+    <div class="text-center">
+    <pre id="output"></pre>
+    </div>
+  </div>
+    </section>
+ -->
      <!-- Thanks Section -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="thanks" class="services">
@@ -561,6 +628,11 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!-- Stuff for Calendar API -->
+<!-- add script for js/calendar.js here -->
+     <script src="https://apis.google.com/js/client.js?onload=checkAuth"></script>
+
+
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
@@ -573,6 +645,9 @@
     <script src="js/contact_me.js"></script>
     <script src="js/jqBootstrapValidation.js"></script>
 
+        <!-- Jquery Impromptu JS -->
+        <script src="js/jquery-impromptu.js"></script>
 </body>
+
 
 </html>
