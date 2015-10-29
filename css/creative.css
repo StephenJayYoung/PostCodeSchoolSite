@@ -599,7 +599,7 @@ ul.social-buttons li a:active {
     height: auto;
 }
 
-/*Stuff for portfolio modals*/
+/*Stuff for portfolio and modals*/
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
