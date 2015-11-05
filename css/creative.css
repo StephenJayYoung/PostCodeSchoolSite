@@ -533,16 +533,19 @@ height: 100%;
 }
 
 #finalPresentations {
-    background-color: #ededed;
-}
-
-
-#calendar {
     background-color: white;
 }
 
-#thanks {
+#about {
     background-color: #ededed;
+}
+
+#calendar {
+    background-color: #ededed;
+}
+
+#thanks {
+    background-color: white;
 }
 
 p.button {
