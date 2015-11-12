@@ -533,19 +533,19 @@ height: 100%;
 }
 
 #finalPresentations {
-    background-color: white;
+    background-color: #ededed;
 }
 
 #about {
-    background-color: #ededed;
+    background-color: white;
 }
 
 #portfolio {
-    background-color: #ededed;
+    background-color: white;
 }
 
 #thanks {
-    background-color: white;
+    background-color: #ededed;
 }
 
 p.button {
