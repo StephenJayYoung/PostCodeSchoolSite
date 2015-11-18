@@ -1,0 +1,26 @@
+{
+  "name": "PostCodeSchoolSite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StephenJayYoung/PostCodeSchoolSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StephenJayYoung/PostCodeSchoolSite/issues"
+  },
+  "homepage": "https://github.com/StephenJayYoung/PostCodeSchoolSite",
+  "devDependencies": {
+    "font-awesome": "^4.4.0",
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.1"
+  }
+}
