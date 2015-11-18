@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "static -p3210 dist",
     "build": "gulp"
   },
   "repository": {
@@ -21,6 +22,7 @@
     "font-awesome": "^4.4.0",
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.5",
-    "gulp-minify-css": "^1.2.1"
+    "gulp-minify-css": "^1.2.1",
+    "node-static": "^0.7.7"
   }
 }
