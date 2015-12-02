@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "static -p3210 dist",
-    "build": "gulp"
+    "build": "gulp && node compile.js"
   },
   "repository": {
     "type": "git",
