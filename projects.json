@@ -1,0 +1,23 @@
+[
+	{
+		"title":"My new project",
+		"image":"img/bandsFromHereLogo.png",
+		"summary": "this allows users to discover bands and artists from a particular city.",
+		"teamMembers":[]
+	},	
+	{
+		"title":"My other new project",
+		"image":"img/bandsFromHereLogo.png",
+		"summary": "This secong app that allows users to discover bands and artists from a particular city."
+	},
+	{
+		"title":"My new project",
+		"image":"img/bandsFromHereLogo.png",
+		"summary": "this allows users to discover bands and artists from a particular city."
+	},
+	{
+		"title":"My other new project",
+		"image":"img/bandsFromHereLogo.png",
+		"summary": "This secong app that allows users to discover bands and artists from a particular city."
+	}
+]
